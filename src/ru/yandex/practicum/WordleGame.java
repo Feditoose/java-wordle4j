@@ -93,8 +93,7 @@ public class WordleGame {
                 if (a == '+') {
                     corLettersFromAnsw.put(index, answer[index]);
                     corrPosition.add(index);
-                }
-                else if (a == '^') {
+                } else if (a == '^') {
                     corLettersFromAnsw.put(index + 5, answer[index]);
                 } else if (a == '-') {
                     wrongLetters.add(answer[index]);
@@ -146,8 +145,7 @@ public class WordleGame {
         String hintWord = "";
         if (suitableWords.size() != 0) {
             hintWord = suitableWords.get(random.nextInt(suitableWords.size()));
-        }
-        else {
+        } else {
             hintWord = dictionary.getWords().get(random.nextInt(dictionary.getWords().size()));
         }
 
