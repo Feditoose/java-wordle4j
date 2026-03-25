@@ -74,6 +74,7 @@ public class Wordle {
                 ex.printStackTrace(log);
             }
         } catch (IOException ex) {
+            ex.printStackTrace(System.out);
         }
     }
 }
