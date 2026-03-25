@@ -70,8 +70,6 @@ public class Wordle {
                     System.out.println("Загаданное слово: " + wordle.getCorrectAnswer());
                     throw new RuntimeException();
                 }
-            } catch (NullPointerException ex) {
-                ex.printStackTrace(log);
             } catch (RuntimeException ex) {
                 ex.printStackTrace(log);
             }
