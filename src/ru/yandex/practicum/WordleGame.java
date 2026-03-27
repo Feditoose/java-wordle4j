@@ -20,7 +20,6 @@ public class WordleGame {
     private int steps;
     private WordleDictionary dictionary;
     private List<String> userAnswers;
-    private PrintWriter log;
 
     public WordleGame(WordleDictionary dictionary, PrintWriter log) {
         Random random = new Random();
@@ -33,12 +32,10 @@ public class WordleGame {
 
         steps = 0;
         userAnswers = new ArrayList<>();
-        this.log = log;
     }
 
     public WordleGame(WordleDictionary dictionary, PrintWriter log, String correctAnswer) {
         this.dictionary = dictionary;
-        this.log = log;
         this.correctAnswer = correctAnswer;
         this.steps = 0;
         this.userAnswers = new ArrayList<>();

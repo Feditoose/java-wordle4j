@@ -10,11 +10,9 @@ import java.util.List;
  */
 public class WordleDictionary {
     private List<String> words;
-    private PrintWriter log;
 
     public WordleDictionary(List<String> words, PrintWriter log) {
         this.words = words;
-        this.log = log;
     }
 
     public void printWords() {
